@@ -1,0 +1,45 @@
+{{#extends "base"}}
+{{#block "content"}}
+<form  method="post">
+    <div>
+        <label>Food Name</label>
+        <input type="text" class="form-control" name="foodName" id="foodName">
+    </div>
+    <div>
+        <label>Calories</label>
+        <input type="text"  name="calories" class="form-control">
+    </div>
+    <div>
+        <label>Meal</label>
+        <input type="radio"  name="meal" value="breakfast"class="form-check-input me-3">
+        <label>Breakfast</label>
+
+        <input type="radio"  name="meal" value="lunch"class="form-check-input me-3">
+        <label>Lunch</label>
+
+        <input type="radio"  name="meal" value="dinner"class="form-check-input me-3">
+        <label>Dinner</label>
+    </div>
+
+    <div>
+        <label>Tags</label>
+        <input type="checkbox" class="form-check-input" name="tag" value="homecooked">
+        <label for="">Homecooked</label>
+
+        <input type="checkbox" class="form-check-input" name="tag" value="organic">
+        <label for="">Organic</label>
+
+        <input type="checkbox" class="form-check-input" name="tag" value="vegan">
+        <label for="">Vegan</label>
+
+        <input type="checkbox" class="form-check-input" name="tag" value="unhealthy">
+        <label for="">Unhealthy</label>
+    </div>
+    <input type="submit" value="Add new" class="btn btn-primary mt-3">
+    
+</form>
+
+{{/block}}
+{{/extends}}    
+
+{{!-- things to take note , when using input element = the name of the input . --}}
